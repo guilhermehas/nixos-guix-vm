@@ -26,6 +26,8 @@ To run the VM:
     ./result/bin/run-nixos-vm
 ```
 
+## SSH
+
 To enter in the VM using ssh:
 
 ``` sh
