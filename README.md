@@ -9,7 +9,7 @@ This is a repository to make it easier to run NixOS with Guix inside a VM.
 First, it is necessary to create a `cqow2` virtual machine image. For that, run this command:
 
 ``` sh
-    nix-build -A mkVmImg --out-link --no-out-link | sh
+nix-build -A mkVmImg --out-link --no-out-link | sh
 ```
 
 ## Run the virtual machine
@@ -17,13 +17,13 @@ First, it is necessary to create a `cqow2` virtual machine image. For that, run 
 Build the VM with the command:
 
 ``` sh
-    nix-build -A vm
+nix-build -A vm
 ```
 
 To run the VM:
 
 ``` sh
-    ./result/bin/run-nixos-vm
+./result/bin/run-nixos-vm
 ```
 
 ## SSH
@@ -31,7 +31,7 @@ To run the VM:
 To enter in the VM using ssh:
 
 ``` sh
-    ssh -p 2222 test@localhost
+ssh -p 2222 test@localhost
 ```
 
 The password will be `test`.
